@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>me</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Sour Gummy", sans-serif;
+            font-weight: 600;
+        }
+
+        body {
+            background-color: rgb(109, 108, 108);
+            display: flex;
+            flex-direction: column;
+        }
+
+        .header {
+            border: 1px solid black;
+            min-height: 20vh;
+            width: 100vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            background-color: rgb(165, 165, 166);
+            border-style: none;
+        }
+
+        .box {
+            font-size: 20px;
+            color: rgb(9, 9, 9);
+        }
+
+        .soc {
+            border: 0px solid rgb(0, 0, 13);
+            font-size: 1em;
+        }
+
+        a {
+            color: black;
+            /* text-decoration: ; */
+            font-size: 0.9em;
+            margin: 2px;
+            border: 0px solid black;
+            padding: 10px;
+            border-radius: 20px;
+            /* background-color: rgb(144, 144, 144); */
+        }
+
+        a:hover {
+            background-color: rgb(144, 144, 144);
+            transform: scale(1.1);
+        }
+
+        button {
+            margin-top: 10px;
+            background-color: rgb(195, 195, 195);
+        }
+
+        .main {
+            display: flex;
+            justify-content: center;
+            /* align-content: center; */
+            text-align: center;
+            color: rgb(251, 250, 249);
+            height: auto;
+            /* min-height: 70vh; */
+            width: 100vw;
+            padding: 20px;
+            background-color: rgb(82, 82, 82);
+            /* margin: 20px; */
+            /* margin-top: 10px; */
+            /* display: none; */
+        }
+
+        .image {
+            /* align-content: center;
+            justify-content: center; */
+            margin: 70px;
+            display: flex;
+            align-items: center;
+        }
+
+        img {
+            height: 250px;
+            width: 260px;
+            border-radius: 50%;
+        }
+
+        img:hover {
+            transform: scale(1.03);
+            box-shadow: 1px 1px 15px rgba(158, 148, 148, 0.8);
+            transition: transform 0.3s ease-out;
+        }
+
+        .info {
+            /* position: relative;
+            top: 35px; */
+            font-size: 1.2em;
+            text-align: center;
+            width: 30vw;
+            height: auto;
+            padding: 10px;
+            margin: 70px;
+            border: 0px solid black;
+            border-radius: 10px;
+            background-color: rgb(42, 41, 41);
+
+        }
+
+        .info:hover {
+            transform: translate(1%);
+            box-shadow: 1px 1px 15px rgba(18, 18, 18, 0.8);
+            transition: transform 0.3s ease-out;
+        }
+
+        p{
+            margin-bottom: 10px;
+            display: block;
+            padding: 15px;
+            text-align: left;
+            font-size: 15px;
+        }
+
+        .footer {
+            border: 1px solid black;
+            height: 30vh;
+            width: 100vw;
+            padding: 20px;
+            text-align: center;
+            background-color: rgb(249, 249, 252);
+            border-style: none;
+            background-color: rgb(165, 165, 166);
+
+        }
+
+        .feedback {
+            color: #fdfcfc;
+            padding: 10px;
+            color: black;
+            font-size: 1.1em;
+        }
+
+        textarea {
+            margin-top: 20px;
+            padding: 5px;
+            border-radius: 10px;
+        }
+
+        textarea:focus {
+            outline: none;
+        }
+
+        button {
+            /* margin: 20px; */
+            padding-left: 20px;
+            padding-right: 20px;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            border: 0px;
+        }
+
+        button:hover {
+            background-color: rgb(233, 232, 232);
+
+        }
+
+        small {
+            font-size: 10px;
+        }
+
+        h4{
+            font-size: x-large;
+        }
+
+        #feedback{
+            height: 10vh;
+        }
+
+        @media (max-width: 768px) {
+            * {
+                font-weight: 600;
+            }
+
+            .header {
+                height: 20vh;
+            }
+
+            .box {
+                font-size: 25px;
+            }
+
+
+            .main {
+                flex-direction: column;
+                height: auto;
+                min-height: 70vh;
+                padding: 30px;
+                align-items: center;
+                justify-content: center;
+                text-align: center;
+            }
+
+            .image,
+            .info {
+                margin: 10px;
+                /* width: 100%; */
+                padding: 10px;
+                /* text-align: center; */
+            }
+
+            img {
+                width: 200px;
+                height: 200px;
+            }
+
+            .info {
+                position: relative;
+                top: 10px;
+                font-size: 1.1em;
+                width: 90%;
+                height: auto;
+            }
+
+            button {
+                font-size: 15px;
+                padding: 8px 16px;
+            }
+
+            .footer {
+                height: auto;
+                padding: 20px;
+            }
+
+            .feedback textarea {
+                width: 90%;
+            }
+
+            small {
+                font-size: 10px;
+            }
+
+            #feedback{
+                height: 10vh;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="header">
+        <div class="box ">
+            <h4>- hey guys! i'm Manav :) </h4><small>*just a 21 yo boy tryna learn cool things*</small>
+        </div><br>
+        <div class="soc">
+            <a href="index.html">home</a>
+            <a href="blog.html">blog</a>
+            <a href="https://github.com/MANAVMUDGAL1">github</a>
+            <a href="Project.html">Projects</a>
+        </div>
+    </div>
+    <div class="main">
+        <div class="image">
+            <img src="https://i.pinimg.com/736x/63/eb/b6/63ebb6c5b7ac3bac26f2936b415267ef.jpg" height="300" width="310"
+                alt="A picture of me">
+        </div>
+        <div class="info">
+            <!-- <small>*not important*</small> -->
+            <p>Yo! how's it going?<br><br>i'm a third year student at a tier-3 college, and i am not even a rookie when it comes to
+                programming, right now i'm learning javaScript and then i'll learn back end, i'm also interested in AI,  <br> <br> Java, python, C/C++ and javaScript are the only languages i know, i've experience with using python as backend in my projects and i use java for dsa. <br> <br>
+                i'm just starting, i have a long way to go.
+            </p>
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="feedback">
+            <!-- <p>Feedback form here</p> -->reviews?
+            <div class="text">
+                <form id="feedbackForm">
+                    <textarea name="feedback" id="feedback" cols="80"
+                        placeholder="enter your feedback here."></textarea>
+                    <br><button type="submit">submit</button> <br><small></small>
+                </form>
+            </div>
+            <!-- <button type="submit">submit</button> -->
+        </div>
+        <!-- <div class="cop">
+
+        </div> -->
+
+    </div>
+
+    <script src="script.js">
+    </script>
+</body>
+
+</html>
